@@ -1,0 +1,9 @@
+{
+  "workbench.colorCustomizations": {
+    // Status Bar (bottom navbar) - Blue to indicate backend project
+    "statusBar.background": "#1e3a8a",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingBackground": "#1e40af",
+    "statusBar.noFolderBackground": "#172554"
+  }
+}
