@@ -568,8 +568,8 @@ async function handleInvoicePaymentSucceeded(
           expand: ["data.items.data.price"],
         });
         const invPriceId = (invoice.lines?.data?.[0] as any)?.price?.id;
-        const match = subs.data.find((s) =>
-          s.items.data.some((it) => it.price?.id === invPriceId)
+        const match = subs.data.find((s: Stripe.Subscription) =>
+          s.items.data.some((it: Stripe.SubscriptionItem) => it.price?.id === invPriceId)
         );
         if (match) return match.id;
       }
